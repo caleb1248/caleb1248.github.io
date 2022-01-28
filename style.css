@@ -5,46 +5,51 @@ html, body{
 	height: 100%;
 	margin: 0;
 	font-size:25px;
+	background-color: darkgray;
+	color:white;
 }
+
 .bigPicture{
 	height: 100%;
 	margin: 0;
-    background-image: url(circle.png);
     background-repeat: no-repeat;
-    background-size: auto;
-	background-color: darkgray;
+    background-size: auto 100%;
 	background-position: center;
-	overflow-y: scroll; 
+	background-image: url(circle.png);
 }
-.bigPicture::-webkit-scrollbar{
-	display: none
-}
-.mainbody{
-	padding: 25px;
-	margin-left: 15%;
-	margin-right: 15%;
-}
+
 p#topbar
 {
 	display: grid;
 	position: fixed;
 	width: 100%;
-	background-color: darkgray;
 	margin:0;
-	grid-template-areas: 'link1 link2 link3'
+	grid-template-areas: 'link1 link2 link3';
 }
+
 a{
 	text-decoration-line: none;
-	color:white;
 	padding:20px;
-	border-bottom: 2px solid white;
+	border: 2px solid white;
+	opacity: 0.9;
+	background-color: darkgray;
+	color:white;
 }
+
+a:hover{
+	opacity: 1;
+	color:darkgray;
+	background-color: white;
+}
+
 #l1{grid-area: link1;border-right: 1px solid white}
+
 #l2{
 	grid-area: link2;
 	border-left: 1px solid white;
 	border-right: 1px solid white;
 }
+
 #l3{
 	grid-area: link3;
 	border-left: 1px solid white;
