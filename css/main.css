@@ -1,103 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+:root {
+  font-size: 25px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   font-family: 'Roboto', sans-serif;
   text-align: center;
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	font-size: 25px;
-	color:white;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  color: white;
 }
 
 .bigPicture {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
-	height: 100%;
-	margin: 0;
+  height: 100%;
+  margin: 0;
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
-	background-image: linear-gradient(skyblue, blue);
+  background-image: linear-gradient(skyblue, blue);
 }
 
 nav {
-	display: flex;
-	justify-content: space-between;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(169, 169, 169, 0.9);
-	grid-template-areas: 'link1 link2 link3';
-	transition: all .5s;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkgray;
 }
 
-.navlinks {
-  height: 100%;
+.title {
+  padding: 1rem;
+  font-size: 1.2rem;
 }
 
 .navlinks ul {
-  display: flex;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .navlinks li {
   list-style: none;
+  margin: 0;
 }
 
 .navlinks li a {
-  display: block;
+  margin: 0;
   text-decoration: none;
+  color: white;
   padding: 1rem;
+  display: block;
 }
 
-a {
-	text-decoration-line: none;
-	padding:20px;
-	border: 2px solid white;
-	background-color: rgba(169, 169, 169, 0.9);
-	color:white;
-	backdrop-filter: blur(5px);
-	transition: all .5s;
+.navlinks li a:hover {
+  background-color: white;
+  color: darkgray;
 }
-
-a:hover {
-	color: darkgray;
-	background-color: white;
-}
-
 
 h1 {
-	margin: 0;
-	width: 100vw;
-	font-size: 16vmin;
-	font-weight: 50;
-	text-align: center;
+  margin: 0;
+  width: 100vw;
+  font-size: 16vmin;
+  font-weight: 50;
+  text-align: center;
 }
 
 .sheetmusic {
-	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://media.istockphoto.com/vectors/music-staff-with-music-notes-vector-vector-id475582788?k=20&m=475582788&s=612x612&w=0&h=m9yaXDI69P3sbakTdtXGTB8MEcYlOdYip64BhPvpK5s=');
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding-top: 40px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://media.istockphoto.com/vectors/music-staff-with-music-notes-vector-vector-id475582788?k=20&m=475582788&s=612x612&w=0&h=m9yaXDI69P3sbakTdtXGTB8MEcYlOdYip64BhPvpK5s=');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+  height: 100vh;
 }
 
 #cursedFlappy {
-	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://storage.googleapis.com/replit/images/1648220020827_81fb226cfc44c02b7b5a242696757f1f.png');
-	background-size: cover;
-	background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://storage.googleapis.com/replit/images/1648220020827_81fb226cfc44c02b7b5a242696757f1f.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .top {
-	width: 100vw;
-	display: flex;
-	align-items: center;
-	margin-top: 74px;
-	height: 60vh;
-	background-repeat: no-repeat;
-	background-image: linear-gradient(skyblue, blue);
-	flex-row: row wrap;
+  margin-top: 86px;
+  display: flex;
+  align-items: center;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(blue, skyblue);
+  flex-row: row wrap;
+}
+
+.mainbody a {
+  text-decoration-line: none;
+  padding: 20px;
+  border: 2px solid white;
+  background-color: rgba(169, 169, 169, 0.9);
+  color: white;
+  backdrop-filter: blur(5px);
+  transition: all .5s;
+}
+
+.mainbody a:hover {
+  color: darkgray;
+  background-color: white;
 }
