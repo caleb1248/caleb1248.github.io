@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 html, body {
   font-family: 'Roboto', sans-serif;
   text-align: center;
@@ -23,18 +22,36 @@ html, body {
 	background-image: linear-gradient(skyblue, blue);
 }
 
-#topbar {
-	transition: all .5s;
+nav {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	margin: 0;
-	z-index: 1;
-	height: 74px;
-	display: grid;
-	position: fixed;
 	background-color: rgba(169, 169, 169, 0.9);
 	grid-template-areas: 'link1 link2 link3';
+	transition: all .5s;
+}
+
+.navlinks {
+  height: 100%;
+}
+
+.navlinks ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navlinks li {
+  list-style: none;
+}
+
+.navlinks li a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
 }
 
 a {
@@ -52,21 +69,6 @@ a:hover {
 	background-color: white;
 }
 
-#l1 {
-	grid-area: link1;
-	border-right: 1px solid white;
-}
-
-#l2 {
-	grid-area: link2;
-	border-left: 1px solid white;
-	border-right: 1px solid white;
-}
-
-#l3 {
-	grid-area: link3;
-	border-left: 1px solid white;
-}
 
 h1 {
 	margin: 0;
@@ -74,11 +76,6 @@ h1 {
 	font-size: 16vmin;
 	font-weight: 50;
 	text-align: center;
-}
-
-.codingBackground {
-	background-image: url('https://i.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif');
-	background-size: cover;
 }
 
 .sheetmusic {
@@ -104,40 +101,3 @@ h1 {
 	background-image: linear-gradient(skyblue, blue);
 	flex-row: row wrap;
 }
-
-.material-icons {
-	font-size: 50px !important;
-	color: white;
-	cursor: pointer;
-	vertical-align: middle;
-	margin-top: 12px
-}
-
-.menu-container {
-	position: absolute;
-	width: 74px;
-	height: 74px;
-	right: 0;
-}
-
-.expanded {
-	height: 100% !important
-}
-
-#menulist {
-	display: grid;
-	gric-template-colums: auto;
-	margin-top: 74px;
-	background-color: white;
-	height: calc(100% - 74px)
-}
-
-#menulist > a {
-	display: flex;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-}
-
-#me
