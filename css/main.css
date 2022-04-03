@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 :root {
   font-size: 25px;
 }
@@ -78,14 +79,6 @@ h1 {
   font-size: 16vmin;
   font-weight: 50;
   text-align: center;
-}
-
-.sheetmusic {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://media.istockphoto.com/vectors/music-staff-with-music-notes-vector-vector-id475582788?k=20&m=475582788&s=612x612&w=0&h=m9yaXDI69P3sbakTdtXGTB8MEcYlOdYip64BhPvpK5s=');
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 40px;
-  height: 100vh;
 }
 
 #cursedFlappy {
