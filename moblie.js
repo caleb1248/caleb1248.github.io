@@ -1,6 +1,1 @@
-const bars = document.querySelector('.bars');
-
-bars.onclick = () => {
-	document.querySelector('.navlinks').classList.toggle('active')
-}
-
+var x=e=>document.querySelector(e);x('bars').onclick=f=>x('.navlinks').classList.toggle('active')
