@@ -1,1 +1,1 @@
-var x=e=>document.querySelector(e);x('bars').onclick=f=>x('.navlinks').classList.toggle('active')
+var x=e=>document.querySelector(e);x('.bars').onclick=f=>x('.navlinks').classList.toggle('active')
