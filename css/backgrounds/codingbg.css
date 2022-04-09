@@ -1,5 +1,7 @@
 .codingBackground {
-	background-image: url('https://i.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif');
+	padding: 0;
+	background-image: url('./coding.png');
+	backdrop-filter: blur(10px);
 	background-size: cover;
   flex-direction: column;
 }
