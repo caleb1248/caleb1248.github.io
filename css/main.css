@@ -124,7 +124,7 @@ iframe {
   min-width: 200px;
 }
 
-@media(max-width: 700px) {
+@media (max-width: 700px) {
   iframe {
     width: 94vw;
     height: calc(94vw * 9/16);
