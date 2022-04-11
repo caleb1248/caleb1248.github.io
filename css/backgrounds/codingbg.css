@@ -1,5 +1,5 @@
 .codingBackground {
-	padding: 0;
+	padding: 0 !important;
 	background-image: url('./coding.png');
 	background-size: cover;
   flex-direction: column;
