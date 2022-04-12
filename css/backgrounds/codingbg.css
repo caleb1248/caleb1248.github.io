@@ -3,4 +3,8 @@
 	background-image: url('./coding.png');
 	background-size: cover;
   flex-direction: column;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	height: 60vh;
+	min-height: 400px;
 }
